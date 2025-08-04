@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function cussum(){
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+
+            document.getElementById("result").value = eval(a) + eval(b);
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <label>Number 1</label>
+                <input type="Number" id="n1">
+                <br><br>
+
+                <label>Number 2</label>
+                <input type="Number" id="n2">
+                <br><br>
+
+                <label>Result</label>
+                <input type="number" id="result">
+                <br><br>
+
+                <input type="button" value="+" onclick="cussum();" />
+                <br><br>
+
+</form>
+</body>
+</html>

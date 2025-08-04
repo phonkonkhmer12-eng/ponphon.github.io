@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body{
+            background-color:lawngreen;
+          
+        }
+        .num1{
+            width:25px;
+            height:300px;
+            background-color:aqua;
+            padding: 10px 10px 10px 10px;
+        }
+        .num2{
+            background-color:white;
+        }
+        .num3{
+            background-color:ghostwhite;
+        }
+        .num4{
+            background-color:powderblue;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function cussum() {
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+            document.getElementById("result").value = eval(a) + eval(b);
+        }
+        function cussub() {
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+            document.getElementById("result").value = eval(a) - eval(b);
+        }
+        function cusmul() { 
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+            document.getElementById("result").value = eval(a) * eval(b);
+        }
+        function cusdiv() {
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+            document.getElementById("result").value = eval(a) / eval(b);
+        }
+        function cusclear() {
+            let a = document.getElementById("Number1").value = "";
+            let b = document.getElementById("Number2").value = "";
+            document.getElementById("Result").value = "";
+        }
+    </script>
+</head>
+<body>
+   
+        <from>
+
+            <label>Number1</label>
+            <input type="number" id="n1" class="num2" />
+            <br><br />
+            <label>Number2</label>
+            <input type="number" id="n2" class="num3" />
+            <br /><br />
+            <label>Result</label>
+            <input type="number" id="result" readonly class="num4" />
+            <br /><br />
+
+            <input type="button" value="+" onclick="cussum();" />
+            <input type="button" value="-" onclick="cussub();" />
+            <input type="button" value="*" onclick="cusmul();" />
+            <input type="button" value="/" onclick="cusdiv();" />
+            <iuput type="button" value="Clear" onclick="cusclear();"/>
+
+
+        </from>
+    
+</html>
